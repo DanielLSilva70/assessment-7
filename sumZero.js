@@ -9,4 +9,6 @@ function sumZero (param) {
     return false;
 }
 
-console.log(sumZero([1, 2, 3, -2]))
+console.log(sumZero([1, -1]))
+//time complexity 0(n^2)
+//space complexity 0(n)

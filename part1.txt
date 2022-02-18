@@ -1,0 +1,31 @@
+extraLargeArray
+insert- 774.095916 ms
+append- 2.610208 ms 
+
+largeArray
+insert- 8.774041 ms
+append- 630.042 ms
+
+mediumArray
+insert- 192.875  μs
+append- 128.167  μs
+
+smallArray
+insert- 29.041 μs
+append- 57.042 μs
+
+tinyArray
+insert- 23.917 μs
+append- 65.625 μs
+
+When there are less numbers insert had the faster time, but once the numbers 
+got to the thousands append begin to become quicker. In the append function 
+it uses the .push method which adds a new element to the end of an array so it 
+only has to give the new element a index thats greater than the of the last 
+element of the array. In the insert function it use the .unshift method which
+puts the new element in the beginning of the array, with that it gives the new
+element a index of 1 but increments the rest of the array. The better of the 
+two functions just depends on how big the array is. If the array does not have
+to many elements then .unshift would work best, but not by much. If the array
+has a large amount of elements then .push would save you a way more time rather
+than .unshift.
